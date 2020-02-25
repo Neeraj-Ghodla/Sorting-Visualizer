@@ -1,0 +1,14 @@
+/* body {
+  background-color: black;
+} */
+
+.bar {
+  width: 5px;
+  display: inline-block;
+  background-color: lightsalmon;
+  margin: 0px 1px;
+}
+
+.info {
+  font-size: 1.5rem;
+}

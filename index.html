@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Sorting Visualization
+    </title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <!-- Fontawesome CSS -->
+    <script
+      src="https://kit.fontawesome.com/f8692be16e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="sorting.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".nav-item, .dropdown").hover(function() {
+          var dropdownMenu = $(this).children(".dropdown-menu");
+          if (dropdownMenu.is(":visible")) {
+            dropdownMenu.parent().toggleClass("open");
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand">Sorting Visualizer</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="row justify-content-around align-items-center">
+        <div id="generate" class="btn btn-outline-primary m-3">Generate</div>
+        <!-- <div id="reset" class="btn btn-outline-primary m-3">Reset</div> -->
+        <div id="quicksort" class="btn btn-outline-primary m-3">QuickSort</div>
+        <div id="bubblesort" class="btn btn-outline-primary m-3">
+          BubbleSort
+        </div>
+        <div id="selectionsort" class="btn btn-outline-primary m-3">
+          SelectionSort
+        </div>
+        <div id="insertionsort" class="btn btn-outline-primary m-3">
+          InsertionSort
+        </div>
+        <div id="heapsort" class="btn btn-outline-primary m-3">
+          HeapSort
+        </div>
+        <!-- <div id="mergesort" class="btn btn-outline-primary m-3">
+          MergeSort
+        </div> -->
+        <div id="bogosort" class="btn btn-outline-primary m-3">
+          BogoSort
+        </div>
+        <div id="comparisions" class="m-3 info">Comparisions: 0</div>
+        <div id="swaps" class="=m-3 info">Swaps: 0</div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row justify-content-center text-center">
+        <div id="content" class="col"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="sorting.js"></script>
+  </body>
+</html>
